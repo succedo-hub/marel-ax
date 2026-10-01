@@ -2,10 +2,15 @@
   "name": "marel-ax",
   "private": true,
   "scripts": {
+    "build": "node scripts/build.mjs",
     "dev": "wrangler dev",
-    "deploy": "wrangler deploy"
+    "deploy": "wrangler deploy",
+    "check": "wrangler deploy --dry-run"
+  },
+  "dependencies": {
+    "bootstrap": "5.3.8"
   },
   "devDependencies": {
-    "wrangler": "^4.0.0"
+    "wrangler": "4.145.0"
   }
 }
