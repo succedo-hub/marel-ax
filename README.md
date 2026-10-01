@@ -21,8 +21,8 @@ Wranglers build-steg kör `npm run build` och kopierar Bootstrap från npm till 
 
 Google-kartan använder adressen Örnvägen 10, 22150 Jomala, Åland. Kartan laddas från Google med lazy loading; en separat vägbeskrivningslänk finns också.
 
-## Testfas
+## Produktion
 
-`workers.dev` är aktiverad. Inga egna domäner eller DNS-routes finns i konfigurationen. Sökmotorindexering är avstängd via HTML, `robots.txt` och `_headers` under testfasen.
+Webbplatsen är publicerad på https://marel.ax/ sedan 2026-10-01. Domänkopplingarna hanteras i Cloudflare. `workers.dev` är fortsatt aktiverad.
 
-Inför lansering på marel.ax: verifiera att projektstatus och antalet uppdrag fortfarande är aktuella, ta bort testfasens noindex-direktiv, tillåt indexering i robots.txt, lägg till canonical-URL och koppla domänerna enligt överenskommelse. Detta görs separat från testpubliceringen.
+Sökmotorindexering är tillåten. Startsidan anger https://marel.ax/ som canonical-URL och `robots.txt` länkar till `sitemap.xml`.
